@@ -1,0 +1,179 @@
+*{
+    padding:0%;
+    margin:0%;
+}
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+
+
+body {
+    background-color:whitesmoke;
+}
+.particle {
+    fill: black;
+    animation: fade 5s infinite;
+}
+
+@keyframes fade{
+   0%{
+    opacity: 1;
+}
+
+50% {
+    opacity: 1;
+    transform: translate(-10%, -10%);
+}
+75% {
+    opacity: 0.5
+}
+
+100% {
+    opacity: 0;
+    transform: translate(-10%, -10%)
+}
+}
+
+.legs{
+    fill: #000000;
+    transform: rotate(0deg);
+    /* Define animation properties */
+    animation:forwardAnimation 0.5s forwards linear infinite;
+}
+
+@keyframes rotateAnimation {
+    /* Define keyframes for the rotation animation */
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1deg);
+    }
+}
+.block {
+    fill:black;
+    color:black;
+}
+rect x {
+    fill:#000000;
+}
+.l{
+    fill: #000000;
+    transform: rotate(0deg);
+    /* Define animation properties */
+    animation: 1s forwards linear infinite;
+}
+.le{
+    fill: #000000;
+    transform: rotate(0deg);
+    /* Define animation properties */
+    animation: rotateAnimation 2s linear infinite;
+}
+.leg{
+    fill: #000000;
+    transform: rotate(0deg);
+    /* Define animation properties */
+    animation: rotateAnimation 4s linear infinite;
+}
+.legss{
+    fill: #000000;
+    transform: rotate(0deg);
+    /* Define animation properties */
+    animation: rotateAnimation 3s linear infinite;
+}
+.legsss{
+    fill: #000000;
+    transform: rotate(0deg);
+    /* Define animation properties */
+    animation: rotateAnimation 1s linear infinite;
+}
+.part{
+    fill: black;
+    animation: fade 2.5s infinite;
+}
+.parti{
+    fill: black;
+    animation: fade 1s infinite;
+}
+
+  @keyframes forwardAnimation {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(20px);
+    }
+  }
+
+  .background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.background-container {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500rem;
+    height: 100%;
+    background: linear-gradient(to right, #c0c0c0, #f0f0f0);
+}
+
+#svg {  
+    width: 400px; 
+    height: 100px;
+    position: relative;
+    bottom: 76px;
+    animation: jump 1s infinite;
+}
+.animate{
+    animation: jump 500ms infinite;
+}
+
+@keyframes jump{
+    0%{bottom: 75px;}
+    30%{bottom: px;}
+    70%{bottom: px;}
+    100%{bottom: 89px;}
+
+}
+
+.line {
+    animation: moveUp 0.2s linear infinite;
+    stroke: white;
+}
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-500px); /* Move up by 100px */
+    }
+}
+
+#block{
+    width: 11px;
+    height: 10px;
+    background-color: #000000;
+    position:relative;
+    bottom: 115px;
+    left: 490px;
+    animation: block 3s infinite linear;
+}
+@keyframes block{
+    0%{left: px;}
+        100%{left:-100px;}
+    
+}
+
+
+
+
+
