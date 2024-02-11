@@ -1,0 +1,1 @@
+web: java -jar target/net.trinopolis.matchup2.jar
