@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the Spring Boot JAR file into the container
-COPY build/libs/matchup2.jar /app/matchup2.jar
+COPY build/matchup2.jar /app/matchup2.jar
 
 # Specify the command to run your application
 CMD ["java", "-jar", "matchup2.jar"]
