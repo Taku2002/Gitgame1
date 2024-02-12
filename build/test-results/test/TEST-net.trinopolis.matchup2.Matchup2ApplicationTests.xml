@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="net.trinopolis.matchup2.Matchup2ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-11T18:27:44" hostname="TAKU" time="1.693">
+<testsuite name="net.trinopolis.matchup2.Matchup2ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-12T07:30:15" hostname="TAKU" time="1.556">
   <properties/>
-  <testcase name="contextLoads()" classname="net.trinopolis.matchup2.Matchup2ApplicationTests" time="1.693"/>
-  <system-out><![CDATA[20:27:40.245 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [net.trinopolis.matchup2.Matchup2ApplicationTests]: Matchup2ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-20:27:40.443 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration net.trinopolis.matchup2.Matchup2Application for test class net.trinopolis.matchup2.Matchup2ApplicationTests
+  <testcase name="contextLoads()" classname="net.trinopolis.matchup2.Matchup2ApplicationTests" time="1.556"/>
+  <system-out><![CDATA[09:30:11.364 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [net.trinopolis.matchup2.Matchup2ApplicationTests]: Matchup2ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:30:11.562 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration net.trinopolis.matchup2.Matchup2Application for test class net.trinopolis.matchup2.Matchup2ApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,12 +13,12 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.8)
 
-2024-02-11T20:27:41.164+02:00  INFO 24720 --- [    Test worker] n.t.matchup2.Matchup2ApplicationTests    : Starting Matchup2ApplicationTests using Java 21 with PID 24720 (started by takud in C:\Users\takud\Desktop\matchup2)
-2024-02-11T20:27:41.167+02:00  INFO 24720 --- [    Test worker] n.t.matchup2.Matchup2ApplicationTests    : No active profile set, falling back to 1 default profile: "default"
-2024-02-11T20:27:42.873+02:00  INFO 24720 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-02-11T20:27:42.930+02:00  INFO 24720 --- [    Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-02-11T20:27:44.242+02:00  INFO 24720 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2024-02-11T20:27:44.334+02:00  INFO 24720 --- [    Test worker] n.t.matchup2.Matchup2ApplicationTests    : Started Matchup2ApplicationTests in 3.575 seconds (process running for 5.852)
+2024-02-12T09:30:12.328+02:00  INFO 21756 --- [    Test worker] n.t.matchup2.Matchup2ApplicationTests    : Starting Matchup2ApplicationTests using Java 21 with PID 21756 (started by takud in C:\Users\takud\Desktop\matchup2)
+2024-02-12T09:30:12.330+02:00  INFO 21756 --- [    Test worker] n.t.matchup2.Matchup2ApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-02-12T09:30:13.973+02:00  INFO 21756 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-02-12T09:30:14.033+02:00  INFO 21756 --- [    Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-02-12T09:30:15.386+02:00  INFO 21756 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-12T09:30:15.474+02:00  INFO 21756 --- [    Test worker] n.t.matchup2.Matchup2ApplicationTests    : Started Matchup2ApplicationTests in 3.559 seconds (process running for 5.839)
 ]]></system-out>
   <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\takud\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.11\f9cb566608fbac6bc7bf54901a7aa11543a989ee\byte-buddy-agent-1.14.11.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
