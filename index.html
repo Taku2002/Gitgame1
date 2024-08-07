@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <title>Dev Quiz</title>
+</head>
+<body>
+    <section id="hero">
+        <div class="bar">
+            <div class="logo">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" class="ic_logo"
+                width="136" height="158" viewBox="0 0 136.000000 158.000000"
+                preserveAspectRatio="xMidYMid meet">
+                <metadata>
+                Created by potrace 1.16, written by Peter Selinger 2001-2019
+                </metadata>
+                <g transform="translate(0.000000,158.000000) scale(0.100000,-0.100000)"
+                fill="#000000" stroke="none">
+                <path d="M465 1296 c-148 -37 -250 -151 -278 -309 -35 -207 104 -396 303 -414
+                l59 -6 -105 -153 -105 -154 145 0 146 0 97 148 c217 328 261 482 194 663 -68
+                180 -258 274 -456 225z m183 -243 c56 -42 83 -108 68 -167 -10 -40 -64 -95
+                -106 -107 -143 -43 -258 128 -163 242 15 17 41 38 58 45 39 18 110 12 143 -13z"/>
+                <path d="M897 522 c-32 -20 -67 -86 -67 -126 0 -15 7 -43 16 -62 45 -94 191
+                -99 250 -8 23 35 23 113 0 148 -40 62 -138 86 -199 48z"/>
+                </g>
+                </svg>
+ 
+            </div>
+            <div class="hamburger">
+                <img src="/assets/1954554_hamburger_line_menu_more buttton_three_icon.png" alt="" class="ic_hamburger"  id="hamburger">
+                <img src="/assets/2931151_close_delete_exit_remove_x_icon.png"  class="ic_exit" id="exit">
+                <ul class="dropdown" id="dropdownMenu">
+                    <li>
+                        <div class="border-content">
+                            <a href="#first">Section 1</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="border-content">
+                            <a href="#sec">Section 2</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="border-content">
+                            <a href="#third">Section 3</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="border-content">
+                            <a href="#fourth">Section 4</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="border-content">
+                            <a href="#fifth">Section 5</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#final">Section 6</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdownMenu = document.getElementById('dropdownMenu'); // Correct dropdown menu ID
+    const hamburger = document.getElementById('hamburger');
+    const exit = document.getElementById('exit');
+    const bar = document.querySelector('.bar'); // Reference to the bar
+
+    // Function to toggle the dropdown list
+    function toggleDropdown() {
+        // Toggle the 'show' class on the dropdown
+        const isDropdownVisible = dropdownMenu.classList.toggle('show');
+
+        // Update the icon visibility based on dropdown state
+        if (isDropdownVisible) {
+            hamburger.style.display = 'none'; // Hide hamburger icon
+            exit.style.display = 'block'; // Show exit icon
+            bar.classList.add('no-hover'); // Disable hover effects
+        } else {
+            hamburger.style.display = 'block'; // Show hamburger icon
+            exit.style.display = 'none'; // Hide exit icon
+            bar.classList.remove('no-hover'); // Enable hover effects
+        }
+    }
+
+    // Add event listeners to the icons
+    hamburger.addEventListener('click', toggleDropdown); // Toggle on hamburger click
+    exit.addEventListener('click', toggleDropdown); // Toggle on exit click
+});
+
+
+        </script>
+    </section>
+    <section id="first">
+        <div class="intro_paragraph">
+            <h2 class="h2_intro"><p>Heading</p></h2>
+            <h1 class="h1_intro"><p>Introduction</p></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nisi, ratione, harum eveniet quam nihil inventore nobis sit laboriosam quo eum debitis<br> quibusdam enim obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis doloremque beatae sunt ea, porro sint blanditiis illum reprehenderit <br>error dolore accusantium corrupti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem cum perspiciatis, consectetur sint fugit consequatur modi ipsam, <br>earum minus sit dolor tenetur, distinctio excepturi eaque.</p>
+        </div>
+        <div id="sec" class="content">
+            <div class="block_one">
+                <div class="cam"></div>
+                <div class="out">
+                    <h3><p class="scheme">Heading</p></h3>
+                    <h1><p class="scheme">Title</p></h1>
+                    <p class="text">Lorem ipsum dolor sit amet<br>consectetur adipisicing elit. Maiores nisi, ratione,<br> harum eveniet quam nihil inventore nobis sit laboriosam quo eum debitis<br> quibusdam enim obcaecati!</p>
+                    <div class="btn2">
+                        <a href="https://ninepoint.cc/" target="_blank" class="btn2"> <!-- Add href and class here -->
+                            <p class="link-p_1">LINK</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="block_two">
+                <Div class="in">
+                    <h3><p class="scheme">Heading</p></h3>
+                    <h1><p class="scheme">Title</p></h1>
+                    <p class="text">Lorem ipsum dolor sit amet<br>consectetur adipisicing elit. Maiores nisi, ratione,<br> harum eveniet quam nihil inventore nobis sit laboriosam quo eum debitis<br> quibusdam enim obcaecati!</p>
+                    <div class="btn2">
+                        <a href="https://ninepoint.cc/" target="_blank" class="btn2"> <!-- Add href and class here -->
+                            <p class="link-p_1">LINK</p>
+                        </a>
+                    </div>
+                </Div>
+                <div class="dam"></div>
+            </div>
+        </div>
+    </section>
+    <section id="third" class="orientation">
+    <div class="unc"> 
+        <div class="divblock_1">
+            <h1 class="p_c">Title</h1>
+            <p class="p_c">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Expedita<br> incidunt eius<br> cum sed similique qui enim<br> ipsa libero voluptates rem.<br>sigano letario</p>
+        </div>
+        <div class="divblock_2" id="star"><p>-select-</p>
+            <img src="assets/326521_arrow_down_drop_icon.svg" alt="arrow icon image" id="arrow">
+            <ul class="dropdown_2" id="dropdownMenu_2">
+                <li><a href="#" class="dropdown-item" data-target="item-one">Item 1</a></li>
+                <li><a href="#" class="dropdown-item" data-target="item-two">Item 2</a></li>
+                <li><a href="#" class="dropdown-item" data-target="item-three">Item 3</a></li> 
+            </ul>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const dropdownMenu = document.getElementById('dropdownMenu_2');
+                const arrow = document.getElementById('arrow');
+                const dropdownItems = document.querySelectorAll('.dropdown-item');
+
+                // Show/hide dropdown on arrow click
+                arrow.addEventListener('click', function () {
+                    dropdownMenu.classList.toggle('show'); // Toggle dropdown visibility
+                });
+
+                // Show or hide item divs based on dropdown selection
+                dropdownItems.forEach(item => {
+                    item.addEventListener('click', function (event) {
+                        event.preventDefault(); // Prevent default anchor behavior
+                        const targetId = this.getAttribute('data-target');
+
+                        // Hide all item displays first
+                        document.querySelectorAll('.item_display, .item_display-2, .item_display-3').forEach(display => {
+                            display.style.display = 'none'; // Hide all items
+                        });
+
+                        // Show the selected item
+                        const selectedItem = document.getElementById(targetId);
+                        if (selectedItem) {
+                            selectedItem.style.display = 'block'; // Show the selected item
+                        }
+
+                        // Optionally close the dropdown after selection
+                        dropdownMenu.classList.remove('show'); // Hide the dropdown
+                    });
+                });
+
+                // Add click event to exit icons to hide their respective items
+                const exitIcons = document.querySelectorAll('.ic_exit_item-1, .ic_exit_item-2, .ic_exit_item-3');
+                exitIcons.forEach(exitIcon => {
+                    exitIcon.addEventListener('click', function () {
+                        const parentItem = this.closest('.item_display') || 
+                                        this.closest('.item_display-2') || 
+                                        this.closest('.item_display-3');
+                        if (parentItem) {
+                            parentItem.style.display = 'none'; // Hide the parent item
+                        }
+                    });
+                });
+            });
+        </script>
+        <div class="divblock_3">
+            <h1 class="p_c">Title</h1>
+            <p class="p_c">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Expedita<br> incidunt eius<br> cum sed similique qui enim<br> ipsa libero voluptates rem.<br>sigano letario</p>
+        </div>
+    </div>
+    <div id="fourth" class="block_three">   
+        <div class="divblock_5">
+            <h1 class="p_c">Title</h1>
+            <p class="p_c">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Expedita<br> incidunt eius<br> cum sed similique qui enim<br> ipsa libero voluptates rem.<br>sigano letario</p>
+        </div>
+        <div class="divblock_6">
+            <h1 class="p_c">Title</h1>
+            <p class="p_c">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Expedita<br> incidunt eius<br> cum sed similique qui enim<br> ipsa libero voluptates rem.<br>sigano letario</p>
+        </div>
+        <div class="divblock_4">
+            <h1 class="p_c">Title</h1>
+            <p class="p_c">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Expedita<br> incidunt eius<br> cum sed similique qui enim<br> ipsa libero voluptates rem.<br>sigano letario</p>
+        </div>
+    </div>
+    <div class="item_display" id="item-one">
+        <img src="/assets/2931151_close_delete_exit_remove_x_icon.png"  class="ic_exit_item-1" id="exit_item-1">
+        <div class="mod">
+            Item 1
+        </div>
+    </div>
+    <div class="item_display-2" id="item-two">
+        <img src="/assets/2931151_close_delete_exit_remove_x_icon.png"  class="ic_exit_item-2" id="exit_item-2">
+        <div class="mod">
+            Item 2
+        </div>
+    </div>
+    <div class="item_display-3" id="item-three">
+        <img src="/assets/2931151_close_delete_exit_remove_x_icon.png"  class="ic_exit_item-3" id="exit_item-3">
+        <div class="mod">
+            Item 3
+        </div>
+    </div>
+</section>
+<section id="fifth">
+    <div class="final_t">
+        <div class="state">
+            <h1 class="p_c">Title</h1>
+            <p class="p_c">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Expedita<br> incidunt eius<br> cum sed similique qui enim<br> ipsa libero voluptates rem.<br>sigano letario</p>
+            <div class="btn">
+                <a href="https://ninepoint.cc/">
+                    <p class="link-p_2">LINK</p>
+                </a>
+            </div>
+        </div>
+        <div class="state2">
+            <h1 class="p_c">Title</h1>
+            <p class="p_c">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Expedita<br> incidunt eius<br> cum sed similique qui enim<br> ipsa libero voluptates rem.<br>sigano letario</p>
+            <div class="btn">
+                <a href="https://ninepoint.cc/">
+                    <p class="link-p_2">LINK</p>
+                </a>
+            </div>
+        </div>
+        <div class="state3">
+            <h1 class="p_c">Title</h1>
+            <p class="p_c">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Expedita<br> incidunt eius<br> cum sed similique qui enim<br> ipsa libero voluptates rem.<br>sigano letario</p>
+            <div class="btn">
+                <a href="https://ninepoint.cc/">
+                    <p class="link-p_2">LINK</p>
+                </a>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<section id="final">
+    <div class="final_s">
+        <div class="grey">
+            <div class="a_a"></div>
+            <div class="a_b"></div>
+            <div class="a_c"></div>
+            <div class="a_d"></div>
+            <div class="a_e"></div>
+            <div class="a_f"></div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
